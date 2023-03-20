@@ -1,0 +1,32 @@
+.footerBlock {
+    height: 25vh;
+    background-color: grey;
+}
+.footerContainer {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.footer {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+}
+
+.f {
+    height: 60px;
+    width: 60px;
+    background-color: beige;
+
+
+}
