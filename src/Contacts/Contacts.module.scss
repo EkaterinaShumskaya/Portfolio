@@ -1,0 +1,24 @@
+@import '../common/styles/sass/variables';
+.contactsBlock {
+    height: 100vh;
+    background-color: $bgColor;
+    .contactsContainer {
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .t {
+            position: relative;
+            color: $textColor;
+            font-family: $textFontFamily;
+            font-size: 14px;
+
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,66 @@
+@import '../common/styles/sass/variables';
+
+.mainBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $bgColor;
+
+    .container {
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            width: 70vh;
+            color:$textColor;
+            font-family: $titleFontFamily;
+            @media screen and (max-width: 945px){
+                width: max-content;
+            }
+            h1 {
+                margin: 0;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 1.4074;
+                word-break: break-word;
+                color: $primaryColor;
+                @media screen and (max-width: 945px){
+                    font-size: 20px;
+                    line-height: 49px;
+                }
+            }
+            p {
+                margin: 0;
+                color: $textColor;
+                font-size: 20px;
+            }
+
+        }
+
+        .photo {
+            width: 50vh;
+            height: 70vh;
+            object-fit: cover;
+            z-index: 1;
+            @media screen and (max-width: 945px) {
+                width: 100%;
+            }
+
+        }
+    }}
+
+
+
+
+

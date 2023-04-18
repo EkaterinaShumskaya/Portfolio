@@ -1,14 +1,23 @@
-import React from 'react';
-import s from './Skill.module.css'
+import React, {FC} from 'react';
+import s from './Skill.module.scss'
 
-export const Skill = () => {
+type SkillPropsType = {
+    logo: JSX.Element
+    title: string
+    description: string
+}
+export const Skill: FC<SkillPropsType> = ({logo, title, description}) => {
     return (
-        <div className={s.skill}>
-            <div className={s.icon}></div>
-            <h3> React</h3>
-            <span className={s.description}>
-                IT incubator
-            </span>
+        <div className={s.skillContainer}>
+            <div className={s.service}>
+                <div className={s.icon}>
+                    {logo}
+                </div>
+                <div className={s.description}>
+                    <h3> {title}</h3>
+                    <p>{description}</p>
+                </div>
+            </div>
         </div>
     );
 };

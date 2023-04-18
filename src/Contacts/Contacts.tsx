@@ -1,22 +1,20 @@
-import React from 'react';
-import s from "./Contacts.module.css";
+import React, {FC} from 'react';
+import s from "./Contacts.module.scss";
+import {Title} from "../common/components/title/Title";
+import {ContactForm} from "./ContactForm/ContactForm";
 
-export const Contacts = () => {
+export const Contacts:FC = () => {
     return (
-        <div className={s.contactsBlock}>
+        <section className={s.contactsBlock} id='contactPage'>
             <div className={s.contactsContainer}>
-                <div className={s.contacts}>
-                    <h3 className={s.title}>Contacts</h3>
-                    <form action="/" method="post" className={s.form}>
-                        <input/>
-                        <input/>
-                        <textarea className={s.textarea} placeholder="Send text">
-                        </textarea>
-                    </form>
-                    <button>Send</button>
+                <Title title='Contacts'/>
+                <div className={s.t}>
+                    <h3>I am looking for a job. Connect with me via
+                        phone: +375297978359 or email: ekaterina.vodich@gmail.com</h3>
                 </div>
+                <ContactForm/>
             </div>
-        </div>
-    );
-};
+        </section>
+    )
+}
 

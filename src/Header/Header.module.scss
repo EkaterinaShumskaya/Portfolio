@@ -1,0 +1,38 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+
+
+@media screen and (min-width: 768px) {
+    .mobileNavigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktopNavigation {
+        display: none;
+    }
+}
+.header {
+    position: fixed;
+    height: 68px;
+    width: 100%;
+    background: $bgSecondColor;
+    @include positionBlocks(row, space-between, center);
+    box-sizing: border-box;
+    margin: 0;
+    z-index: 100;
+
+    .burger {
+        font-size: 30px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        color: $primaryColor;
+    }
+}
+
+

@@ -1,0 +1,15 @@
+@import "./variables";
+
+@mixin text ($fontFamily, $fontSize, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+}
+
+@mixin positionBlocks($flexDirection, $justifyContent, $alignItems){
+  display: flex;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}

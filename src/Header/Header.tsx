@@ -1,12 +1,24 @@
-import React from 'react';
-import s from './Header.module.css'
-import Nav from "../Nav/Nav";
+import React, {FC} from 'react';
+import s from './Header.module.scss'
+import {Navigation} from "../Navigation/Navigation";
+import {GiHamburgerMenu} from "@react-icons/all-files/gi/GiHamburgerMenu";
 
-export const Header = () => {
+
+type SidebarProps = {
+    handleOpen: () => void
+}
+
+export const Header: FC<SidebarProps>  = ({handleOpen}) => {
     return (
-        <div className={s.header}>
-            <Nav/>
-        </div>
+        <header className={s.header}>
+            <div className={s.mobileNavigation}>
+                <GiHamburgerMenu onClick={handleOpen} className={s.burger}/>
+            </div>
+            <div className={s.desktopNavigation}>
+                <Navigation/>
+            </div>
+
+        </header>
     );
 };
 

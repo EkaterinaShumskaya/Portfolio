@@ -1,0 +1,54 @@
+@import "../../common/styles/sass/variables.scss";
+@import "../../common/styles/sass/mixins.scss";
+
+.skillContainer {
+    background: $bgColor;
+    border-radius: 5px;
+    width: 450px;
+    cursor: pointer;
+    justify-content: space-between;
+    margin: 10px;
+    box-sizing: border-box;
+        .icon {
+            color: $primaryColor;
+            width: 54px;
+            height: 54px;
+        }
+        .description {
+            color: $textColor;
+            p {
+                color: $textColor;
+            }
+        }
+    }
+.service {
+    display: flex;
+    background: transparent;
+    padding: 40px;
+}
+.description {
+    width: 100%;
+    @include positionBlocks(column, flex-start, flex-start);
+    font-family:$titleFontFamily;
+    color: $bgColor;
+    box-sizing: border-box;
+    h3 {
+        margin: 0 0 19px 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4074;
+        word-break: break-word;
+    }
+    p {
+        margin: 0;
+        color: $bgColor;
+        font-size: 16px;
+    }
+}
+
+.icon{
+    @include positionBlocks(row, flex-start, flex-start);
+    margin-right: 30px;
+    font-size: 40px;
+    color: $primaryColor;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import s from './Main.module.css'
+import s from './Main.module.scss'
+import mainphoto from '../assets/image/My photo.jpeg'
 
 
 export const Main = () => {
@@ -7,12 +8,11 @@ export const Main = () => {
         <div className={s.mainBlock}>
             <div className={s.container}>
             <div className={s.text}>
-                <span>Hi There</span>
-                <h1>I am Katya Shumskaya</h1>
-                <p>
-                    I am a front-end developer</p>
+                <span>HELLO, MY NAME IS</span>
+                <h1>Katya Shumskaya</h1>
+                <p>I am a front-end developer</p>
             </div>
-            <div className={s.photo}></div>
+                <img src={mainphoto} className={s.photo}/>
         </div>
         </div>
     );

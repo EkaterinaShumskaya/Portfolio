@@ -1,0 +1,23 @@
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
+
+.skillsBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+}
+
+.skillsContainer {
+  @include positionBlocks(column, flex-start, center);
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
