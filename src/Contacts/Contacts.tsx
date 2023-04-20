@@ -8,7 +8,7 @@ export const Contacts:FC = () => {
         <section className={s.contactsBlock} id='contactPage'>
             <div className={s.contactsContainer}>
                 <Title title='Contacts'/>
-                <div className={s.t}>
+                <div className={s.contact}>
                     <h3>I am looking for a job. Connect with me via
                         phone: +375297978359 or email: ekaterina.vodich@gmail.com</h3>
                 </div>
