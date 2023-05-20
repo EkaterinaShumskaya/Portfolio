@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useFormik} from "formik";
 import emailjs from '@emailjs/browser';
-import {validationSchema} from "../../utils/formValidators";
+import {validationSchema} from "../../common/utils/formValidators";
 
 
 export interface Values {

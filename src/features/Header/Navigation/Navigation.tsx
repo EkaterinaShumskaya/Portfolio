@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import s from './Navigation.module.scss'
-import {Links} from "../common/components/Links/Links";
+import {Links} from "../../../common/components/Links/Links";
 
 
 export const Navigation: FC = () => {

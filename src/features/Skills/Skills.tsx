@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Skills.module.scss'
 import {Skill} from "./Skill/Skill";
-import {Title} from "../common/components/title/Title";
+import {Title} from "../../common/components/title/Title";
 import {FaReact} from '@react-icons/all-files/fa/FaReact';
 import {SiRedux} from '@react-icons/all-files/si/SiRedux';
 import {DiJavascript1} from '@react-icons/all-files/di/DiJavascript1';
@@ -60,7 +60,7 @@ import {AiOutlineCloudServer} from '@react-icons/all-files/ai/AiOutlineCloudServ
 
         ]
         return (
-            <div className={s.skillsBlock}>
+            <div className={s.skillsBlock} id={'skillsPage'}>
                 <div className={s.skillsContainer}>
                     <Title title={'Skills'}/>
                     <div className={s.skills}>

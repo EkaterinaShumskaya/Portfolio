@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
 import s from './Projects.module.scss'
 import {Project} from "./Project/Project";
-import {Title} from "../common/components/title/Title";
-import todoImage from './../assets/image/todo.jpeg'
-import socialImage from './../assets/image/SN.jpg'
-import {projectImgStyle} from "../utils/utils";
+import {Title} from "../../common/components/title/Title";
+import todoImage from '../../assets/image/todo.jpeg'
+import socialImage from '../../assets/image/SN.jpg'
+import {projectImgStyle} from "../../common/utils/utils";
 
 export const Projects: FC = () => {
     const socialStyle = projectImgStyle(socialImage)
@@ -26,7 +26,7 @@ export const Projects: FC = () => {
     ]
 
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock} id='projectsPage'>
             <div className={s.projectsContainer}>
                 <Title title={'Projects'}/>
                 <div className={s.projects}>

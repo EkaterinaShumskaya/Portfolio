@@ -1,7 +1,8 @@
 import React, {FC} from 'react';
 import s from './Header.module.scss'
-import {Navigation} from "../Navigation/Navigation";
+import {Navigation} from "./Navigation/Navigation";
 import {GiHamburgerMenu} from "@react-icons/all-files/gi/GiHamburgerMenu";
+import {ContactButtonGroup} from "../ContactButtonGroup/ContactButtonGroup";
 
 
 type SidebarProps = {
@@ -17,6 +18,8 @@ export const Header: FC<SidebarProps>  = ({handleOpen}) => {
             <div className={s.desktopNavigation}>
                 <Navigation/>
             </div>
+
+            <ContactButtonGroup/>
 
         </header>
     );

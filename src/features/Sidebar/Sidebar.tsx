@@ -1,8 +1,8 @@
 import {IoCloseSharp} from "@react-icons/all-files/io5/IoCloseSharp";
 import {FC, memo} from "react";
-import {Navigation} from "../Navigation/Navigation";
+import {Navigation} from "../Header/Navigation/Navigation";
 import s from './Sidebar.module.scss'
-import {Links} from "../common/components/Links/Links";
+import {Links} from "../../common/components/Links/Links";
 
 type SidebarProps = {
     open: boolean

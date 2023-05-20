@@ -1,0 +1,20 @@
+@import '../../common/styles/sass/mixins';
+
+
+.iconsContainer {
+  width: 220px;
+  padding: 30px;
+  @include positionBlocks(row, space-between, center);
+
+}
+
+.icon {
+  font-size: 20px;
+  color: $textColor;
+
+  &:hover {
+    color: $primaryColor;
+    transform: translateY(-5px);
+    transition: 0.5s;
+  }
+}

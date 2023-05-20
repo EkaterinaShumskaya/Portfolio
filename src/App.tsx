@@ -1,12 +1,12 @@
 import React, {useCallback, useState} from 'react';
 import './App.css';
-import {Skills} from "./Skills/Skills";
-import {Header} from "./Header/Header";
-import {Main} from "./Main/Main";
-import {Projects} from "./Progects/Projects";
+import {Skills} from "./features/Skills/Skills";
+import {Header} from "./features/Header/Header";
+import {Main} from "./features/Main/Main";
+import {Projects} from "./features/Progects/Projects";
 import {Contacts} from "./Contacts/Contacts";
 import {Navigate, Route, Routes} from 'react-router-dom';
-import {Sidebar} from "./Sidebar/Sidebar";
+import {Sidebar} from "./features/Sidebar/Sidebar";
 
 
 function App() {

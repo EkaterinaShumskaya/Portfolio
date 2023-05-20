@@ -23,7 +23,6 @@ export const Project: FC<ProjectType> = ({
     return (
         <div className={s.project}>
             <div className={s.imageBlock} style={style}>
-                {/*<button className={s.button}>See</button>*/}
                 <div className={s.button}>
                     <a href={link} className={s.link} target='_blank' rel='noreferrer'> SEE </a>
                 </div>
