@@ -4,7 +4,7 @@ import {FC, useCallback} from "react";
 import {Container, Engine} from "tsparticles-engine";
 import {loadFull} from "tsparticles";
 
-export const Particle:FC = () => {
+export const Particle: FC = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine);
     }, []);

@@ -1,6 +1,5 @@
 import {IoCloseSharp} from "@react-icons/all-files/io5/IoCloseSharp";
-import {FC, memo} from "react";
-import {Navigation} from "../Header/Navigation/Navigation";
+import {FC} from "react";
 import s from './Sidebar.module.scss'
 import {Links} from "../../common/components/Links/Links";
 

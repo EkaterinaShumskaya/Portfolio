@@ -2,9 +2,11 @@ import React, {FC} from 'react';
 import s from "./Contacts.module.scss";
 import {Title} from "../common/components/title/Title";
 import {ContactForm} from "./ContactForm/ContactForm";
+import {Particle} from "../features/Main/Particle/Particle";
 
-export const Contacts:FC = () => {
+export const Contacts: FC = () => {
     return (
+
         <section className={s.contactsBlock} id='contactPage'>
             <div className={s.contactsContainer}>
                 <Title title='Contacts'/>

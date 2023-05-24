@@ -6,7 +6,7 @@ type LinksPropsType = {
     handleClose?: () => void
     className: string
 }
-export const Links:FC<LinksPropsType> = ({handleClose,className}) => {
+export const Links: FC<LinksPropsType> = ({handleClose, className}) => {
     return (
         <>
             <NavLink to={'/main'}

@@ -2,6 +2,7 @@ import {useState} from "react";
 import {useFormik} from "formik";
 import emailjs from '@emailjs/browser';
 import {validationSchema} from "../../common/utils/formValidators";
+import axios from "axios";
 
 
 export interface Values {
@@ -10,11 +11,7 @@ export interface Values {
     message: string;
 }
 
-const EMAIL_SERVICE = {
-    serviceID: 'service_rxj0p2c',
-    templateID: 'template_db001nr',
-    publicKey: 'w-HDKV66xD5JY-lqs'
-}
+
 export const useContactForm = () => {
     const [snackbarMessage, setSnackbarMessage] = useState<string>('')
     const [snackbarShow, setSnackbarShow] = useState<boolean>(false)
@@ -30,11 +27,14 @@ export const useContactForm = () => {
         validationSchema: validationSchema,
         onSubmit: (values, actions) => {
             setOnDisabled(true)
-            emailjs.send(EMAIL_SERVICE.serviceID, EMAIL_SERVICE.templateID, {
+            axios.post('https://gmail-port.vercel.app/sendMessage', {
                 name: values.name,
                 email: values.email,
                 message: values.message
-            }, EMAIL_SERVICE.publicKey)
+            },
+                {headers: {
+                    'Content-Type': 'application/json'
+                }})
                 .then((res) => {
                     setSnackbarMessage('Your message has been sent successfully')
                     setSnackbarType('success')
@@ -52,3 +52,4 @@ export const useContactForm = () => {
     });
     return {formik, onDisabled, snackbarShow, snackbarType, snackbarMessage}
 }
+

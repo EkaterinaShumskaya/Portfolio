@@ -5,6 +5,7 @@ import {Title} from "../../common/components/title/Title";
 import todoImage from '../../assets/image/todo.jpeg'
 import socialImage from '../../assets/image/SN.jpg'
 import {projectImgStyle} from "../../common/utils/utils";
+import {Particle} from "../Main/Particle/Particle";
 
 export const Projects: FC = () => {
     const socialStyle = projectImgStyle(socialImage)
@@ -27,13 +28,15 @@ export const Projects: FC = () => {
 
     return (
         <div className={s.projectsBlock} id='projectsPage'>
+            <Particle/>
             <div className={s.projectsContainer}>
                 <Title title={'Projects'}/>
                 <div className={s.projects}>
-                    {projects.map((el) => <Project style={el.style}
+                    {projects.map((el,index) => <Project style={el.style}
                                                    title={el.title}
                                                    description={el.description}
                                                    link={el.link}
+                                                   key={index}
                     />)}
                 </div>
 
