@@ -27,7 +27,7 @@ export const useContactForm = () => {
         validationSchema: validationSchema,
         onSubmit: (values, actions) => {
             setOnDisabled(true)
-            axios.post('https://gmail-port.vercel.app/sendMessage', {
+            axios.post('https://back-portfolio-six.vercel.app/sendMessage', {
                 name: values.name,
                 email: values.email,
                 message: values.message
