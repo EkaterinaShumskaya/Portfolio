@@ -4,17 +4,21 @@
     background-color: $bgColor;
     .contactsContainer {
         height: 80%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .contact {
+        h3 {
             position: relative;
             color: $textColor;
             font-family: $textFontFamily;
             font-size: 14px;
             margin-top: 30px;
+            font-weight: 400;
+            line-height: 2;
+            text-align: center;
 
         }
     }

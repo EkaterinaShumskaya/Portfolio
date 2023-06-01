@@ -17,12 +17,13 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 30px;
 
     .text {
       display: flex;
       flex-direction: column;
       font-size: 20px;
-      width: 70vh;
+      padding: 30px;
       color: $textColor;
       font-family: $titleFontFamily;
       @media screen and (max-width: 945px) {
